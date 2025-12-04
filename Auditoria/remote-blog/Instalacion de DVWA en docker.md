@@ -12,12 +12,12 @@ docker pull vulnerables/web-dvwa
 ```
 docker run --rm -it -p 80:80 vulnerables/web-dvwa
 ```
-![[Pasted image 20251202001618.png]]
+
+![Pasted image 20251202001618](../images/Pasted%20image%2020251202001618.png)
 en el navegador entrar a  **localhost** 
 user:admin
 pass:password
-![[Pasted image 20251202001746.png]]
-
+![Pasted image 20251202001618](../images/Pasted%20image%2020251202001746.png)
 
 DVWA está "diseñada intencionalmente con graves defectos" para ser una plataforma de aprendizaje.
 Ese menú gris que ves a la izquierda es un índice de **lecciones aisladas**:
@@ -28,7 +28,7 @@ Ese menú gris que ves a la izquierda es un índice de **lecciones aisladas**:
     
 - **Pestaña Stored XSS:** Aquí hay un libro de visitas ("Guestbook") diseñado para que practiques guardar scripts maliciosos
 
-![[Pasted image 20251202001458.png]]
+![Pasted%20image%2020251202001458](../images/Pasted%20image%2020251202001458.png)
 En una aplicación real (no de práctica), tú no tienes un menú que te diga dónde está el fallo. Tú tendrías que probar inyección SQL en:
 - El formulario de Login (para entrar sin contraseña).
 - La barra de búsqueda.
