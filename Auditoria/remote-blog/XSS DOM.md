@@ -27,8 +27,8 @@ En este nivel, el script de la página toma el parámetro de la URL y lo escribe
         ```
         
     - Presiona **Enter**.
-        
-![[Pasted image 20251204025611.png]]
+![Pasted ima7](../images/Pasted%20image%2020251204025611.png)        
+
 **Resultado:** Debería saltar la alerta con tu cookie. El navegador ejecutó el script porque la página lo escribió "en vivo" en el documento.
 
  Nivel Medium     
@@ -61,8 +61,8 @@ En este nivel, el script de la página toma el parámetro de la URL y lo escribe
             
 
 **Inténtalo con ese payload en la URL.** Deberías ver un menú desplegable "roto" en la página y luego la alerta emergente.
-![[Pasted image 20251204025841.png]]
 
+![Pasted ima7](../images/Pasted%20image%2020251204025841.png)
 
 Como bien dedujiste, "solo modificar la URL" no sirve de nada si nadie la abre. El ataque no es contra el servidor, es contra la persona que hace clic.
 Ejecutar scripts en el contexto del navegador de la víctima para **robar sesiones**, realizar acciones no autorizadas o redirigir tráfico .
