@@ -9,8 +9,7 @@ Necesitas decirle a `sqlmap`: "Oye, soy el usuario 'admin' y esta es mi identifi
 4. En la columna izquierda, despliega **Cookies** y haz clic en tu IP
 5. Verás algo llamado `PHPSESSID`. **Copia el valor** (será una cadena larga de letras y números, ej: `abcdef123456...`).
 
-![[Pasted image 20251203165249.png]]
-
+![Pasted ima7](../images/Pasted%20image%2020251203165249.png)
 
 ```
 sqlmap -u "http://192.168.122.1/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" \
@@ -18,8 +17,8 @@ sqlmap -u "http://192.168.122.1/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" \
 --batch --dbs
 ```
 se esta preguntando que base de datos existen
-![[Pasted image 20251203172545.png]]![[Pasted image 20251203172729.png]]
 
+![Pasted ima7](../images/Pasted%20image%2020251203172729.png)
 **¿Por qué usar "solo" `--dbs` ahora?** Es una cuestión de orden y metodología. En un ataque real (Red Team), no intentas descargarlo todo de golpe porque hace mucho "ruido" en la red y alerta al Blue Team. Sigues una jerarquía:
 
 1. **Enumeración (`--dbs`):** Primero preguntas "¿Qué bases de datos existen?"..
@@ -35,8 +34,8 @@ sqlmap -u "url" \
 **extraer los nombres de las tablas** para encontrar dónde están los usuarios de la tabal **dvwa**
 
 
-![[Pasted image 20251203173158.png]]
+![Pasted ima7](../images/Pasted%20image%2020251203173158.png)
 
+![Pasted ima7](../images/Pasted%20image%2020251203174127.png)
 
-![[Pasted image 20251203174127.png]]
-![[Pasted image 20251203174141.png]]
+![Pasted ima7](../images/Pasted%20image%2020251203174141.png)
