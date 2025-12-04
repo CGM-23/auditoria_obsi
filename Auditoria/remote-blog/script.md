@@ -5,7 +5,8 @@
 ' OR '1'='1
 ```
 
-![[Pasted image 20251204103527.png]]
+
+[[Pasted image 20251204103527.png]]
 
 
 ```
