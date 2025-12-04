@@ -28,8 +28,8 @@ Por defecto se anuncia a sí mismo: `User-Agent: sqlmap/1.2.4...`
 ```
 grep "sqlmap" /var/log/apache2/access.log
 ```
-![[Pasted image 20251204123946.png]]
 
+![Pasted image 20251204105337](../images/Pasted%20image%2020251204123946.png)
 Lo primero que delata a la herramienta es que, por defecto, se anuncia a sí misma. En cada línea del log, al final, verás algo como: `"User-Agent: sqlmap/1.8.11#stable (http://sqlmap.org)"`
 
 - **Diagnóstico:** Esto es una confesión automática. Un navegador normal diría `Mozilla/5.0...`.
@@ -37,7 +37,9 @@ Lo primero que delata a la herramienta es que, por defecto, se anuncia a sí mis
 **Manual/Script**
 Aparecerán pocas líneas y muy espaciadas en el tiempo. Es más difícil de ver a simple vista, pero si buscas las palabras clave, ahí estarán.
 Mostrará `Mozilla/5.0...` (como un navegador normal) o `Python-urllib` si usas un script básico sin configurar.
-![[Pasted image 20251204123006.png]]
+
+![Pasted ima7](../images/Pasted%20image%2020251204123006.png)
+
 ```
 grep "UNION" /var/log/apache2/access.log | grep -v "sqlmap"
 ```
@@ -48,8 +50,8 @@ Ahora busquemos los intentos de inyección de JavaScript. El informe indica que 
 ```
 grep -iE "%3Cscript%3E|%3Cimg|%3Csvg|onerror=|onload=|alert\(|1337" access.log
 ```
-![[Pasted image 20251204122511.png]]
 
+![Pasted ima7](../images/Pasted%20image%2020251204122511.png)
 Aquí está lo que un analista de seguridad ve:
 
 1. **El Vector de Ataque (`%3Cscript%3E`):**
@@ -96,8 +98,9 @@ Aquí está lo que un analista de seguridad ve:
 	1. Busca en la configuración de DVWA si hay una opción para activar **PHPIDS** (a veces está en el archivo de configuración o en versiones específicas de DVWA hay un botón para activarlo).
 	    
 	2. Si logras activarlo y lanzas el mismo ataque SQL que te funcionó antes, verás una página de error diciendo "Attack Detected" y tu petición será rechazada, protegiendo la aplicación aunque esté en nivel "Low".
-![[Pasted image 20251204120536.png]]
 
-![[Pasted image 20251204120550.png]]
+![Pasted ima7](../images/Pasted%20image%2020251204120536.png)
 
+
+![Paste7](../images/Pasted%20image%2020251204120550.png)
 
