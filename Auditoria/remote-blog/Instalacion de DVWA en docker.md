@@ -6,7 +6,8 @@ para descargar la imagen
 ```
 docker pull vulnerables/web-dvwa
 ```
-![[Pasted image 20251202001251.png]]
+
+![Pasted image 20251204105337](../images/Pasted%20image%2020251202001251.png)
 
 ```
 docker run --rm -it -p 80:80 vulnerables/web-dvwa
