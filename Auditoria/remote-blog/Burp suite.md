@@ -3,7 +3,7 @@ Esta herramienta viene preinstalada en Kali Linux siempre que utilices una image
 primero 
 Se utilizará un proxy configurado mediante la extensión _FoxyProxy_ en Firefox. Al activarla, el navegador enviará el tráfico al _Proxy Listener_ de Burp Suite, que por defecto escucha en **127.0.0.1:8080**.
 
-![[Pasted image 20251202013010.png]]
+![Imagen 1](auditoria_obsi/Auditoria/images/Pasted+Image+20251202013010.png)
 
 ![[Pasted image 20251202012910.png]]
 
